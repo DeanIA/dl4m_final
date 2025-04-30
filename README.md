@@ -46,7 +46,7 @@ Nathan researched satellite imagery datasets, trained the EuroSAT VAE model, hel
 -  Christopher Praley: cpraley@nyu.edu
 -  Nathan Townes-Anderson: nt2420@nyu.edu
 
-### Document Sumamry
+### Document Summary
 
 | **Document Name**      | **Owner** | **Description**                                                                                                                                                                                                                               |
 |------------------------|-----------|------------------------------------------------------|
