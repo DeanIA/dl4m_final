@@ -39,13 +39,16 @@ Using the Mapbox dataset created from generate_images.ipynb, we built a CNN that
 
 ## Credits
 
+Nathan researched satellite imagery datasets, trained the EuroSAT VAE model, helped design the final presentation, and took meeting notes.
+
 ### Contact Info
 
 -  Christopher Praley: cpraley@nyu.edu
+-  Nathan Townes-Anderson: nt2420@nyu.edu
 
 ### Document Sumamry
 
-| **Document Name**      | **Author** | **Description**                                                                                                                                                                                                                               |
+| **Document Name**      | **Owner** | **Description**                                                                                                                                                                                                                               |
 |------------------------|-----------|------------------------------------------------------|
 | generate_images.ipynb  | Chris     | Notebook utilizing both census tract information from the US Census Bureau to identify centroids for each census tract in the stae of NY. Using those centroids, a function to query the Mapbox API for one satellite image per census tract. |
 | mapbox_rgb_model.ipynb | Chris     | Notebook generating a CNN to classify satellite images using the RGB images generated from the Mapbox API.  |
