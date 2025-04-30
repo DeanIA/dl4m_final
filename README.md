@@ -1,10 +1,19 @@
 # Satellite Project
 
-We are using methods learned from Deep Learning for Media (MPATE-GE 2039) to investigate how to classify satellite imagery.
+We are using methods learned from Deep Learning for Media (MPATE-GE 2039) to investigate how to generate and classify satellite imagery.
+
+We had several research questions, including:
+
+- What data sets exist for satellite imagery and how do they compare?
+- How do different models perform on satellite imagery?
+- Is RGB or Multispectral Band imagery better for deep learning?
+- Can population be predicted from satellite imagery?
 
 ## Data
 
 ### EuroSAT
+
+[The Tensorflow EuroSAT dataset](https://github.com/phelber/EuroSAT) provides two sets of 27,000 satellite images, one with Multispectral bands and another with just RGB. This imagery has ten labels for land cover classification including 'AnnualCrop', 'Forest', and 'Highway'.
 
 ### Mapbox API
 
@@ -17,6 +26,10 @@ There datasets are quite large but can be accessed on a Shared Google Drive here
 The US Census publishes data at the Census Tract level for all census tracts in the US. We utilized the informatino for the state of New York, uploaded here as tract_data.csv. The data was further manipulated using scripts written in R to calculate centroids and identify appropriate population density clusters for the different census tracts, contained in [census_tract_labels.R](https://github.com/DeanIA/dl4m_final/blob/main/census_tract_labels.R).
 
 ## Modeling
+
+### Synthetic Data Generation with EuroSAT
+
+Using the EuroSAT database we trained a VAE to generate synthetic satellite imagery. Perhaps due to the model's relative simplicity and/or the varied nature of the imagery, the data the model generated was too blurry to be used for further research.
 
 ### RBG vs Spectral Modeling
 
@@ -32,9 +45,10 @@ Using the Mapbox dataset created from generate_images.ipynb, we built a CNN that
 
 ### Document Sumamry
 
-| **Document Name**      | **Owner** | **Description**                                                                                                                                                                                                                               |
+| **Document Name**      | **Author** | **Description**                                                                                                                                                                                                                               |
 |------------------------|-----------|------------------------------------------------------|
 | generate_images.ipynb  | Chris     | Notebook utilizing both census tract information from the US Census Bureau to identify centroids for each census tract in the stae of NY. Using those centroids, a function to query the Mapbox API for one satellite image per census tract. |
 | mapbox_rgb_model.ipynb | Chris     | Notebook generating a CNN to classify satellite images using the RGB images generated from the Mapbox API.  |
 | map_widget.ipynb       | Chris     | Notebook containing an interactive widget that outputs satellite image and population density prediction based on address.|
 | census_tract_labels.R  | Chris     | R script that identifies centroids from US Census shapefile and creates clusters based on population density.  |
+| EuroSAT_VAE_Synthetic_Data_Generation_Share.ipynb | Nathan | Notebook loading the EuroSAT dataset and training a VAE to generate synthetic data. |
