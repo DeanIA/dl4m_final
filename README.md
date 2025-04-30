@@ -29,7 +29,7 @@ The US Census publishes data at the Census Tract level for all census tracts in 
 
 ### Synthetic Data Generation with EuroSAT
 
-Using the EuroSAT database we trained a VAE to generate synthetic satellite imagery. Perhaps due to the model's relative simplicity and/or the varied nature of the imagery, the data the model generated was too blurry to be used for further research.
+Using the EuroSAT database we trained a VAE to generate synthetic satellite imagery. Due to the dataset's size and the varied nature of the imagery the model generated synthetic data too blurry to be used for further research. However, with a bigger dataset this approach seems promising.
 
 ### RBG vs Spectral Modeling
 
