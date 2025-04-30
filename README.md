@@ -8,13 +8,13 @@ We are using methods learned from Deep Learning for Media (MPATE-GE 2039) to inv
 
 ### Mapbox API
 
-Using the Mapbox API, we generate two datasets of ~5400 images each, one for each census tract in the state of New York. They are set to two different "zoom" levels at the centroid of each census tract. The functions we used to call the API are contained in [generate_images.ipynb]([url](https://github.com/DeanIA/dl4m_final/blob/main/generate_images.ipynb)).
+Using the Mapbox API, we generate two datasets of ~5400 images each, one for each census tract in the state of New York. They are set to two different "zoom" levels at the centroid of each census tract. The functions we used to call the API are contained in [generate_images.ipynb](https://github.com/DeanIA/dl4m_final/blob/main/generate_images.ipynb).
 
-There datasets are quite large but can be accessed on a Shared Google Drive here: [Mapbox Datasets]([url](https://drive.google.com/drive/folders/14b-4faQ0EOhJEAhjNNlAyK46_-BIunRg?usp=sharing)). You may need to request access to open.
+There datasets are quite large but can be accessed on a Shared Google Drive here. You may need to request access to open. Link: [Mapbox Datasets](https://drive.google.com/drive/folders/14b-4faQ0EOhJEAhjNNlAyK46_-BIunRg).
 
 ### US Census Data
 
-The US Census publishes data at the Census Tract level for all census tracts in the US. We utilized the informatino for the state of New York, uploaded here as tract_data.csv. The data was further manipulated using scripts written in R to calculate centroids and identify appropriate population density clusters for the different census tracts, contained in [census_tract_labels.R]([url](https://github.com/DeanIA/dl4m_final/blob/main/census_tract_labels.R))
+The US Census publishes data at the Census Tract level for all census tracts in the US. We utilized the informatino for the state of New York, uploaded here as tract_data.csv. The data was further manipulated using scripts written in R to calculate centroids and identify appropriate population density clusters for the different census tracts, contained in [census_tract_labels.R](https://github.com/DeanIA/dl4m_final/blob/main/census_tract_labels.R).
 
 ## Modeling
 
@@ -22,7 +22,7 @@ The US Census publishes data at the Census Tract level for all census tracts in 
 
 ### Population Density Prediction
 
-Using the Mapbox dataset created from generate_images.ipynb, we built a CNN that was used to predict the urbanicty (rural, suburban, or urban) of the images across New York. The CNN resulted in validation accuracy of .92. This modeling is contained in [mapbox_rgb_model.ipynb]([url](https://github.com/DeanIA/dl4m_final/blob/main/mapbox_rgb_model.ipynb)).
+Using the Mapbox dataset created from generate_images.ipynb, we built a CNN that was used to predict the urbanicty (rural, suburban, or urban) of the images across New York. The CNN resulted in validation accuracy of .92. This modeling is contained in [mapbox_rgb_model.ipynb](https://github.com/DeanIA/dl4m_final/blob/main/mapbox_rgb_model.ipynb).
 
 ## Credits
 
