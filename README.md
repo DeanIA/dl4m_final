@@ -13,7 +13,7 @@ We had several research questions, including:
 
 ### EuroSAT
 
-[The Tensorflow EuroSAT dataset](https://github.com/phelber/EuroSAT) provides two sets of 27,000 satellite images, one with Multispectral bands and another with just RGB. This imagery has ten labels for land cover classification including 'AnnualCrop', 'Forest', and 'Highway'.
+[The EuroSAT dataset](https://github.com/phelber/EuroSAT) provides two sets of 27,000 satellite images, one with Multispectral bands and another with just RGB. This imagery has ten labels for land cover classification including 'AnnualCrop', 'Forest', and 'Highway'.
 
 ### Mapbox API
 
