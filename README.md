@@ -33,7 +33,7 @@ Using the EuroSAT database we trained a VAE to generate synthetic satellite imag
 
 ### RBG vs Spectral Modeling
 
-Using VGG-16 and BigEarthNet pretrained models to test land classification accuracy on the EuroSAT database's RGB and Multispectral imagery. The result suggests a model trained on Multispectral imagery performs better for land classification tasks.  
+Using VGG-16 and BigEarthNet pretrained models to test land classification accuracy on the EuroSAT dataset's RGB and Multispectral imagery. The result suggests a model trained on multispectral imagery performs better for land classification tasks.  
 
 ### Population Density Prediction
 
