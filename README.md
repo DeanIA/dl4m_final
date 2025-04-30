@@ -41,7 +41,7 @@ Using the Mapbox dataset created from generate_images.ipynb, we built a CNN that
 
 ## Credits
 
-Nathan researched satellite imagery datasets, trained the EuroSAT VAE model, helped design the final presentation, and took meeting notes.
+Nathan researched satellite imagery datasets, trained the EuroSAT VAE model, helped design the final presentation, and took meeting notes. Dean developed models for RGB and spectral imaging using the EuroSAT dataset. Chris developed the Mapbox API functions, US census data analysis, and built the CNN to predict population density classes from NY State images.
 
 ### Contact Info
 
