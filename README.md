@@ -33,6 +33,8 @@ Using the EuroSAT database we trained a VAE to generate synthetic satellite imag
 
 ### RBG vs Spectral Modeling
 
+Using VGG-16 and BigEarthNet pretrained models to test land classification accuracy on the EuroSAT database's RGB and Multispectral imagery. The result suggests a model trained on Multispectral imagery performs better for land classification tasks.  
+
 ### Population Density Prediction
 
 Using the Mapbox dataset created from generate_images.ipynb, we built a CNN that was used to predict the urbanicty (rural, suburban, or urban) of the images across New York. The CNN resulted in validation accuracy of .92. This modeling is contained in [mapbox_rgb_model.ipynb](https://github.com/DeanIA/dl4m_final/blob/main/mapbox_rgb_model.ipynb).
@@ -44,6 +46,8 @@ Nathan researched satellite imagery datasets, trained the EuroSAT VAE model, hel
 ### Contact Info
 
 -  Christopher Praley: cpraley@nyu.edu
+-  Dean Issacharoff: dai7591@nyu.edu
+-  Inigo Fuster de la Fuente: ifd210@nyu.edu
 -  Nathan Townes-Anderson: nt2420@nyu.edu
 
 ### Document Summary
@@ -55,3 +59,6 @@ Nathan researched satellite imagery datasets, trained the EuroSAT VAE model, hel
 | map_widget.ipynb       | Chris     | Notebook containing an interactive widget that outputs satellite image and population density prediction based on address.|
 | census_tract_labels.R  | Chris     | R script that identifies centroids from US Census shapefile and creates clusters based on population density.  |
 | EuroSAT_VAE_Synthetic_Data_Generation_Share.ipynb | Nathan | Notebook loading the EuroSAT dataset and training a VAE to generate synthetic data. |
+| env.yml                | Dean      | Dependencies for models |
+| rgb_model.ipynb        | Dean      | Notebook for finetuning a VGG16 model for classification of the RGB EuroSAT dataset. |
+| sent2_model.ipynb      | Dean      | Notebook for a BigEarthNet trained classifer applied to the Multiband EuroSAT dataset. |
